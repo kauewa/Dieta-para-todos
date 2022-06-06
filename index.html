@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dieta para todos</title>
+        <meta charset="utf-8"/>
+        <script src="script.js" defer></script>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header><h1>Dieta para todos</h1></header>
+        <main>
+            <form>
+                <!--gênero-->
+                <div class="box-option">
+                    <h2>Gênero</h2>
+                    <div class="option-2">
+                        <input type="button" id="male" value="masculino" class="OP" onclick="SEXO(1);"/>
+                        <input type="button" id="female" value="feminino" class="OP" onclick="SEXO(0);"/>
+                    </div>
+                </div>
+                <!--Altura-->
+                <div class="box-option">
+                    <h2>Altura</h2>
+                    <input type="text" id="altura" class="write" placeholder="EX: 1.80" autocomplete="off"/>
+                    
+                </div>
+                <!--Idade-->
+                <div class="box-option">
+                    <h2>Idade</h2>
+                    <input type="text" id="idade" class="write" placeholder="EX: 34" autocomplete="off"/>
+                </div>
+                <!--Peso-->
+                <div class="box-option">
+                    <h2>Peso</h2>
+                    <input type="text" id="peso" class="write" placeholder="EX: 84" autocomplete="off"/>
+                </div>
+                <!--Atividade física semanal-->
+                <div class="box-option">
+                    <h2>Quantas horas por semana você pratica atividade física?</h2>
+                    <input type="text" id="semana" class="write" placeholder="EX: 10" autocomplete="off"/>
+                </div>
+                <!--dia a dia-->
+                <div class="box-option">
+                    <h2>Qual opção se encaixa melhor com o seu dia a dia?</h2>
+                    <div class="option-3">
+                        <input type="button" id="option1" class="OP1" value="Fica praticamento o dia todo sentado" onclick="DIA(1);"/>
+                        <input type="button" id="option2" class="OP1" value="Se movimenta com frequencia no seu dia" onclick="DIA(2);"/>
+                        <input type="button" id="option3" class="OP1" value="Se movimenta com intensidade no seu dia" onclick="DIA(3);"/>
+                    </div>
+                </div>
+                <!--Objetivo-->
+                <div class="box-option">
+                    <h2>Qual o seu objetivo?</h2>
+                    <div class="option-3">
+                        <input type="button" id="Perder" class="OP" value="Perder peso" onclick="OBJETIVO(1);"/>
+                        <input type="button" id="Manter" class="OP" value="Manter peso" onclick="OBJETIVO(2);"/>
+                        <input type="button" id="Ganhar" class="OP" value="Ganhar peso" onclick="OBJETIVO(3);"/>
+                    </div>
+                </div>
+                <!--Botão final-->
+                <input type="button" id="final-button" value="Calcule" class="final-button" onclick="finalbutton();"/>
+            </form>
+            <!--resultados-->
+            <form class="resultados">
+                <div class="box-results">
+                    <h4>Indice de massa corporal (IMC)</h4>
+                    <input type="text" id="IMC" class="results" disabled>
+                </div>
+                <div class="box-results">
+                    <h4>Gordura corporal</h4>
+                    <input type="text" id="Gordura-corporal" class="results" disabled>
+                </div>
+                <div class="box-results">
+                    <h4>Gasto calórico</h4>
+                    <input type="text" id="basal" class="results" disabled><br>
+                    <input type="text" id="total" class="results" disabled><br>
+                </div>
+                <div class="box-results">
+                    <h4>Consumo</h4>
+                    <input type="text" id="calorias-consumo" class="results" disabled><br>
+                    <input type="text" id="carbo" class="results" disabled><br>
+                    <input type="text" id="proteina" class="results" disabled><br>
+                    <input type="text" id="gordura" class="results" disabled><br>
+                </div>
+            </form>
+            <section class="Informações">
+                <div class="box-information">
+                    <h2>Gasto calórico</h2>
+                    <p><strong>O que seria sua taxa metabolica basal?</strong></p>
+                    <p>O seu corpo precisa de energia para sobreviver e essa energia é medida em calorias, então sua taxa metabolica basal, seria o quanto de calorias você gasta parado, só para respirar.</p>
+                </div>
+                <div class="box-information">
+                    <h2>Macro nutrientes</h2>
+                    <p><strong>Os macro-nutrientes são divididos em carboidratos, proteínas e gorduras</strong></p>
+                    <!--Carboidrato-->
+                    <!--Proteinas-->
+                    <!--Gordura-->
+                </div>
+                <div class="box-information">
+                    <h2>Alimentos</h2>
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>
