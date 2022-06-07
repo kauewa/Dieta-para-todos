@@ -10,8 +10,13 @@ header{
     text-align: center;
     background-color: #006494;
     padding: 1rem;
-    color: #e8f1f2;
 }
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
 
 body{
     background-color: #13293D;
@@ -140,7 +145,43 @@ form{
 
 .Informações{
    width: 80%;
+   margin: 3rem;
 }
+
+.box-information{
+    margin: 1rem 0;
+}
+
+.box-information h2{
+    color: #1B98E0;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #e8f1f2;
+    padding: 2rem 10rem;
+    border-color: #1B98E0;
+    box-shadow: 10px 10px 70px #247BA0, -10px -10px 70px #247BA0;
+}
+
+.contato .linkedin{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #0e76a8;
+    border-color: #0e76a8;
+    color: white;
+    box-shadow: 5px 5px 70px #0e76a8;
+    transition: 200ms;
+    margin: 1rem 0;
+}
+
+.contato .linkedin:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
 
 
  
