@@ -9,6 +9,7 @@ var objetivo;
 
 //variáveis de resultado
 var resultadoIMC;
+var IMCresult;
 var gorduracorporal;
 var gastocalorico;
 var gastocaloricototal;
@@ -179,19 +180,19 @@ function estadofisico(){
 
         if(resultadoIMC<18.5)
         {
-            console.log("magreza");
+            IMCresult = ("magreza");
         }else if(resultadoIMC>=18.5 && resultadoIMC<=24.9)
         {
-            console.log("normal");
+            IMCresult = ("normal");
         }else if(resultadoIMC>=25 && resultadoIMC<=29.9)
         {
-            console.log("sobrepeso");
+            IMCresult = ("sobrepeso");
         }else if(resultadoIMC>=30 && resultadoIMC<=39.9)
         {
-            console.log("obesidade");
+            IMCresult = ("obesidade");
         }else if(resultadoIMC>=40)
         {
-            console.log("obesidade grave");
+            IMCresult = ("obesidade grave");
         }
 }
 
@@ -218,6 +219,7 @@ function afterclick(){
     
 function apresentarresultados(){
     document.getElementById("IMC").value = resultadoIMC;
+    document.getElementById("IMC-result").value = IMCresult;
     document.getElementById("Gordura-corporal").value = gorduracorporal;
     document.getElementById("basal").value = ("Basal: " + gastocalorico);
     document.getElementById("total").value = ("Total: " + gastocaloricototal);
