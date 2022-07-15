@@ -3,59 +3,66 @@
     <head>
         <title>Dieta para todos</title>
         <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link href="reset.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <script src="script.js" defer></script>
-        <link href="style.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header><a href="index.html"><h1>Dieta para todos</h1></a></header>
+        <header>
+                <h1><a href="index.html">Dieta para todos</a></h1>
+        </header>
         <main>
             <form>
                 <!--gênero-->
                 <div class="box-option">
                     <h2>Gênero</h2>
                     <div class="option-2">
-                        <input type="button" id="male" value="masculino" class="OP" onclick="SEXO(1);"/>
-                        <input type="button" id="female" value="feminino" class="OP" onclick="SEXO(0);"/>
+                        <input type="button" id="male" value="masculino" class="OP" onclick="SEXO(1);" required/>
+                        <input type="button" id="female" value="feminino" class="OP" onclick="SEXO(0);" required/>
                     </div>
                 </div>
                 <!--Altura-->
                 <div class="box-option">
                     <h2>Altura</h2>
-                    <input type="text" id="altura" class="write" placeholder="EX: 1.80" autocomplete="off"/>
+                    <input type="text" id="altura" class="write" placeholder="EX: 1.80" autocomplete="off" inputmode="numeric" required/>
                     
                 </div>
                 <!--Idade-->
                 <div class="box-option">
                     <h2>Idade</h2>
-                    <input type="text" id="idade" class="write" placeholder="EX: 34" autocomplete="off"/>
+                    <input type="text" id="idade" class="write" placeholder="EX: 34" autocomplete="off" inputmode="numeric" required/>
                 </div>
                 <!--Peso-->
                 <div class="box-option">
                     <h2>Peso</h2>
-                    <input type="text" id="peso" class="write" placeholder="EX: 84" autocomplete="off"/>
+                    <input type="text" id="peso" class="write" placeholder="EX: 84" autocomplete="off" inputmode="numeric" required/>
                 </div>
                 <!--Atividade física semanal-->
                 <div class="box-option">
                     <h2>Quantas horas por semana você pratica atividade física?</h2>
-                    <input type="text" id="semana" class="write" placeholder="EX: 10" autocomplete="off"/>
+                    <input type="text" id="semana" class="write" placeholder="EX: 10" autocomplete="off" inputmode="numeric" required/>
                 </div>
                 <!--dia a dia-->
                 <div class="box-option">
                     <h2>Qual opção se encaixa melhor com o seu dia a dia?</h2>
                     <div class="option-3">
-                        <input type="button" id="option1" class="OP1" value="Fica praticamento o dia todo sentado" onclick="DIA(1);"/>
-                        <input type="button" id="option2" class="OP1" value="Se movimenta com frequencia no seu dia" onclick="DIA(2);"/>
-                        <input type="button" id="option3" class="OP1" value="Se movimenta com intensidade no seu dia" onclick="DIA(3);"/>
+                        <input type="button" id="option1" class="OP1" value="Fica praticamento o dia todo sentado" onclick="DIA(1);" required/>
+                        <input type="button" id="option2" class="OP1" value="Se movimenta com frequencia no seu dia" onclick="DIA(2);" required/>
+                        <input type="button" id="option3" class="OP1" value="Se movimenta com intensidade no seu dia" onclick="DIA(3);" required/>
                     </div>
                 </div>
                 <!--Objetivo-->
                 <div class="box-option">
                     <h2>Qual o seu objetivo?</h2>
-                    <div class="option-3">
-                        <input type="button" id="Perder" class="OP" value="Perder peso" onclick="OBJETIVO(1);"/>
-                        <input type="button" id="Manter" class="OP" value="Manter peso" onclick="OBJETIVO(2);"/>
-                        <input type="button" id="Ganhar" class="OP" value="Ganhar peso" onclick="OBJETIVO(3);"/>
+                    <div class="option-4">
+                        <input type="button" id="Perder" class="OP" value="Perder peso" onclick="OBJETIVO(1);" required/>
+                        <input type="button" id="Manter" class="OP" value="Manter peso" onclick="OBJETIVO(2);" required/>
+                        <input type="button" id="Ganhar" class="OP" value="Ganhar peso" onclick="OBJETIVO(3);" required/>
                     </div>
                 </div>
                 <!--Botão final-->
@@ -107,7 +114,7 @@
                 <div class="box-information">
                     <h2>Como Montar a dieta?</h2>
                     <p>
-                        Com os seu macro-nutrientes calculados, você agora precisa montar um cardapio que se encaixa nas quantidades propostas.
+                        Com os seus macro-nutrientes calculados, você agora precisa montar um cardapio que se encaixa nas quantidades propostas.
                         Pesquise as quantidades de macro-nutrientes presente nos alimentos em que você quer utlizar em sua dieta!
                     </p>
                     <p>O mais indicado ainda é você procurar um nutricionista que vai definir uma estratégia mais profissional para atingir seus objetivos!</p>
