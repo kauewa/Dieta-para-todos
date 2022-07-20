@@ -8,13 +8,17 @@ header{
     color: #55d9c0;
     font-size: 2rem;
     font-weight: 700;
-    padding: 2rem;
+    padding: 2rem 0;
     box-shadow: 4px 4px 30px #4dd8ad;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 body{
     background-color: #1D232A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main{
@@ -22,6 +26,7 @@ main{
     flex-direction: column;
     align-items: center;
     color: #ffffff;
+    width: 350px;
 }
 
 form{
@@ -55,7 +60,7 @@ form{
 
 .box-option .option-3 .OP1{
     margin-top: 1rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 1.3rem;
     border-radius: 8px;
     border-style: solid;
     border-color: black;
@@ -73,8 +78,19 @@ form{
     margin-top: 1rem;
 }
 
-.box-option .option-2 .OP, .box-option .option-4 .OP {
+.box-option .option-2 .OP{
     padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    background-color: #02231c;
+    color: #e8f1f2;
+    opacity: 0.8;
+    transition: 500ms;
+}
+
+.box-option .option-4 .OP{
+    padding: 0.3rem 0.4rem;
     border-radius: 8px;
     border-style: solid;
     border-color: black;
@@ -130,8 +146,8 @@ form{
 }
 
 .Informações{
-    width: 80%;
-    margin: 3rem;
+    width: 100%;
+    margin: 3rem 0;
  }
 
  .box-information{
@@ -187,7 +203,7 @@ footer{
         color: #55d9c0;
         font-size: 2rem;
         font-weight: 700;
-        padding: 2rem;
+        padding: 2rem 0;
         box-shadow: 4px 4px 30px #4dd8ad;
         margin-bottom: 2rem;
     }
@@ -198,7 +214,7 @@ footer{
     }
     
     main{
-        width: 940px;
+        width: 960px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -338,7 +354,7 @@ footer{
         width: 100%;
         justify-content: space-between;
         background-color: #15191C;
-        padding: 2rem 10rem;
+        padding: 2rem 0;
     }
     
     .contato .linkedin{
